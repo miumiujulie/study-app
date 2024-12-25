@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDYING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('edit')">Edit</button>
+        <button onclick="showPage('tests')">Tests</button>
+    </div>
+
+    <div id="home" class="page">
+        <h1 class="title">STUDYING</h1>
+    </div>
+
+    <div id="edit" class="page" style="display: none;">
+        <h2>Wähle ein Fach</h2>
+        <select id="subject-select">
+            <option value="german">German</option>
+            <option value="spanish">Spanish</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="informatics">Informatics</option>
+            <option value="maths">Maths</option>
+            <option value="history">History</option>
+            <option value="biology">Biology</option>
+            <option value="english">English</option>
+            <option value="sports">Sports</option>
+            <option value="politic-economics">Politic Economics</option>
+        </select>
+        <div id="question-form">
+            <input type="text" id="question" placeholder="Frage eingeben">
+            <input type="text" id="answer" placeholder="Antwort eingeben">
+            <button onclick="addQuestion()">Hinzufügen</button>
+        </div>
+    </div>
+
+    <div id="tests" class="page" style="display: none;">
+        <h2>Tests</h2>
+        <select id="test-subject-select">
+            <option value="german">German</option>
+            <option value="spanish">Spanish</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="informatics">Informatics</option>
+            <option value="maths">Maths</option>
+            <option value="history">History</option>
+            <option value="biology">Biology</option>
+            <option value="english">English</option>
+            <option value="sports">Sports</option>
+            <option value="politic-economics">Politic Economics</option>
+        </select>
+        <div id="test-questions"></div>
+        <div id="score-bar">
+            <p id="score-text">0 / 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
