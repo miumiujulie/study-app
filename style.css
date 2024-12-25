@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ff66cc;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.page {
+    padding: 20px;
+    display: none;
+}
+
+.title {
+    color: #ff66cc;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#question-form input {
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+}
+
+#score-bar {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    background-color: #ff66cc;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    background-color: #ff66cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3399;
+}
+
+.card {
+    border: 1px solid #ff66cc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card.flipped {
+    background-color: #ffccff;
+}
+
+.card .answer {
+    display: none;
+}
+
+.card.flipped .answer {
+    display: block;
+}
+
+#score-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
